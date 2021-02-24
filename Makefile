@@ -146,7 +146,7 @@ remove-containers:
 ## Удаляет все образы
 remove-images:
 	@echo 'Начало удаления всех образов'
-	@$(DOCKER_BIN) images -q | xargs -r $(DOCKER_BIN) rmi
+	@$(DOCKER_BIN) images -q | xargs -r $(DOCKER_BIN) rmi -f
 	@echo 'Завершение удаления всех образов'
 
 ## Удаляет все файлы приложения

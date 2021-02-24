@@ -1,4 +1,4 @@
-FROM nginx:1.14
+FROM nginx:1.19
 
 LABEL maintainer="Areal <hello@arealidea.ru>"
 
